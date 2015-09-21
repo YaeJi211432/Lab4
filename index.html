@@ -1,0 +1,55 @@
+<html>
+<head>
+<title> Lab 4 </title>
+<script src="scripts/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+PImage coke;
+PImage twix;
+PImage strawberryMilk;
+
+void setup(){
+
+size( 1000, 1000 );
+background(0,0,0);
+frameRate( 30 );
+
+coke = loadImage ("images/coke.jpg");
+twix = loadImage ("images/twix.jpg");
+strawberryMilk = loadImage("images/strawberryMilk.jpg")
+
+
+
+}
+
+
+void draw()
+{
+
+image(coke,0,0,200,200);
+image(twix,350,0,200,200);
+image(strawberryMilk,700,0,200,200);
+
+stroke(255,255,255);
+fill(255,0,0);
+rect(46,220,100,40);
+rect(402,220,100,40);
+rect(750,220,100,40);
+
+
+fill(255,255,255);
+textSize(20);
+text("$6.5",76,248);
+text("$10.5",426,248);
+text("$8.6",780,248);
+
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
